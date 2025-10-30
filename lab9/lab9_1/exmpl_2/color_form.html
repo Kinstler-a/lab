@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Выбор цвета</title>
+</head>
+<body>
+  <h2>Выберите цвет фона</h2>
+
+  <!-- ВАЖНО: color_result.php должен лежать в той же папке -->
+  <form action="color_result.php" method="get">
+    <label>Цвет фона:</label><br>
+    <select name="color" required>
+      <option value="">-- выберите --</option>
+      <option value="lightblue">Голубой</option>
+      <option value="lightgreen">Зелёный</option>
+      <option value="lightyellow">Жёлтый</option>
+      <option value="lightpink">Розовый</option>
+      <option value="lightgray">Серый</option>
+      <option value="white">Белый</option>
+    </select>
+    <br><br>
+    <button type="submit">Открыть страницу с этим фоном</button>
+  </form>
+</body>
+</html>
